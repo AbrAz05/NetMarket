@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "WebAPI\WebAPI.csproj", "{A10964F0-5D4C-4EDC-9C1C-EB0C39F8486C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogic", "BusinessLogic\BusinessLogic.csproj", "{75893D9B-1E3E-4E99-BA29-F38661104AAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{4E262BE3-685C-4BC2-97EF-1B33D565FEF9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A10964F0-5D4C-4EDC-9C1C-EB0C39F8486C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A10964F0-5D4C-4EDC-9C1C-EB0C39F8486C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A10964F0-5D4C-4EDC-9C1C-EB0C39F8486C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A10964F0-5D4C-4EDC-9C1C-EB0C39F8486C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75893D9B-1E3E-4E99-BA29-F38661104AAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75893D9B-1E3E-4E99-BA29-F38661104AAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75893D9B-1E3E-4E99-BA29-F38661104AAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75893D9B-1E3E-4E99-BA29-F38661104AAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E262BE3-685C-4BC2-97EF-1B33D565FEF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E262BE3-685C-4BC2-97EF-1B33D565FEF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E262BE3-685C-4BC2-97EF-1B33D565FEF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E262BE3-685C-4BC2-97EF-1B33D565FEF9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B5CFC031-57F9-4D83-A15A-59E02BB15F41}
+	EndGlobalSection
+EndGlobal
