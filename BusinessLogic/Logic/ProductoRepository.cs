@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLogic.Logic
 {
-    public class ProductoRepository : IProductoRepository
+    public class ProductoRepository : IGenericRepository
     {
         private readonly MarketDbContext _context;
         public ProductoRepository(MarketDbContext context)
@@ -19,12 +19,18 @@ namespace BusinessLogic.Logic
         }
         public async Task<IReadOnlyList<Producto>> GetAllProductosAsync()
         {
-            return await _context.Producto.ToListAsync();
+            return await _context.Producto
+                .Include(p => p.Marca)
+                .Include(p => p.Categoria)
+                .ToListAsync();
         }
 
         public async Task<Producto> GetProductoByIdAsync(int id)
         {
-            return await _context.Producto.FindAsync(id);
+            return await _context.Producto
+                .Include(p => p.Marca)
+                .Include(p => p.Categoria)
+                .FirstOrDefaultAsync(p => p.Id == id);
         }
     }
 }
